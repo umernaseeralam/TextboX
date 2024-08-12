@@ -1,0 +1,324 @@
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FE8660;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --background-color: #ffffff;
+}
+
+.FullGrid {
+    display: grid;
+    grid-template-columns: 0.05fr 0.9fr 0.95fr 2fr;
+    height: 100vh;
+}
+
+.BlackSidebar {
+    background-color: black;
+}
+
+.SideMenu {
+    border-right: 3px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.HamMenuBtn {
+    background: transparent;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.MenuItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.MenuOption {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.MenuOption:hover {
+    background-color: var(--secondary-color);
+}
+
+.MenuIcon {
+    margin-right: 10px;
+}
+
+.PStyling {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.Inbox {
+    border-right: 1px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.InboxText {
+    padding: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.SearchBar {
+    padding: 10px;
+    margin: 0 20px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.ContactHolder, .ContactHolder1 {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ContactHolder:hover, .ContactHolder1:hover {
+    background-color: var(--secondary-color);
+}
+
+.ContactHolder1 {
+    border-left: 3px solid var(--primary-color);
+}
+
+.NameText {
+    margin-left: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.MessagesHolder {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.MessageScreenBackground {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--background-color);
+    overflow-y: auto;
+}
+
+.MessageBubble1, .MessageBubble2 {
+    max-width: 70%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.MessageBubble1 {
+    align-self: flex-start;
+    background-color: var(--secondary-color);
+}
+
+.MessageBubble2 {
+    align-self: flex-end;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.MessageInputArea {
+    display: flex;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.MessageInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.SendButton {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ... (previous CSS remains the same) ... */
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .FullGrid {
+        grid-template-columns: 0.05fr 0.8fr 1fr 2fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .FullGrid {
+        grid-template-columns: 60px 1fr 2fr;
+    }
+
+    .BlackSidebar {
+        display: none;
+    }
+
+    .SideMenu {
+        width: 100%;
+    }
+
+    .SideMenu:hover {
+        width: 200px;
+    }
+
+    .HamMenuBtn {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .MenuItem {
+        margin-top: 20px;
+    }
+
+    .MenuOption {
+        justify-content: flex-start;
+        padding: 15px 10px;
+        white-space: nowrap;
+    }
+
+    .MenuIcon {
+        margin-right: 15px;
+    }
+
+    .PStyling {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    .SideMenu:hover .PStyling {
+        opacity: 1;
+    }
+
+    .Inbox {
+        border-left: 1px solid var(--secondary-color);
+        height: 150px;
+    }
+
+    .ContactHolder, .ContactHolder1 {
+        padding: 12px 15px;
+    }
+
+    .NameText {
+        font-size: 15px;
+    }
+
+    .MessagesHolder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MessageScreenBackground {
+        flex-grow: 1;
+    }
+
+    .MessageBubble1, .MessageBubble2 {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .FullGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .BlackSidebar {
+        display: none;
+    }
+
+    .SideMenu {
+        grid-row: 1;
+        max-width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    .MenuItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .MenuOption {
+        flex: 1;
+    }
+
+    .Inbox, .MessagesHolder {
+        grid-column: 1;
+    }
+
+    .Inbox {
+        grid-row: 2;
+        border-left: none;
+        max-height: 30vh;
+        overflow-y: auto;
+    }
+
+    .MessagesHolder {
+        grid-row: 3;
+        height: calc(70vh - 60px); /* Subtracting the approximate height of SideMenu */
+    }
+}
+
+@media (max-width: 480px) {
+    .SideMenu {
+        padding: 10px 0;
+    }
+
+    .HamMenuBtn, .MenuOption {
+        padding: 5px;
+    }
+
+    .MenuIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .ContactHolder, .ContactHolder1 {
+        padding: 10px;
+    }
+
+    .NameText {
+        font-size: 14px;
+    }
+
+    .InboxText {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .MessageBubble1, .MessageBubble2 {
+        max-width: 85%;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
