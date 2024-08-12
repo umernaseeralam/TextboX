@@ -1,0 +1,119 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: url(/Images/Background.svg);
+}
+.BackgroundHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoHolder{
+   position: fixed;
+   right: 0;
+   margin-right: 50px;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.Logo{
+    width: 200px;
+    height: 100px;
+}
+.Prompt{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #4A4543;
+}
+.LoginScreenHolder{
+    border: 1px solid #C4C4C4;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width: 40%;
+    margin-top: 50px;
+    height: 600px;
+    border-bottom-right-radius:40% ;
+    background-color: white;
+}
+.WelcomeText{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.DetailsText{
+    color: #808080;
+    display: flex;
+    justify-content: center;
+}
+.EmailInputHolder{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.EmailText{
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.PasswordText{
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 14px; 
+}
+.InputStyle{
+    margin-left: 90px;
+    width: 60%;
+    padding:12px;
+    border: 1px solid #DADADA;
+}
+.PasswordOptionsHolder{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.RememberText{
+    text-align: left;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 5px;
+}
+.RememberHolder{
+    margin-left: 90px;
+}
+.ForgotPasswordText{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+.RememberBtn{
+    border: 1px solid;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+}
+.SigninBtn{
+    display: block;
+    margin-left: 15%;
+    padding: 12px ;
+    width: 65%;
+    background-color: #FE8660;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.GoogleSigninBtn{
+    display: block;
+    margin-left: 15%;
+    margin-top: 2%;
+    padding: 12px ;
+    width: 65%;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+}
+.SignupText{
+    display: flex;
+    justify-content: center;
+}
+.LeftSpace{
+    margin-left: 15px;
+}
