@@ -2,7 +2,7 @@
     font-family: sans-serif;
 }
 body{
-    background-image: url(Images/Background.svg);
+   background-image: url(Images/Background.svg);
 }
 .BackgroundHolder{
     display: flex;
