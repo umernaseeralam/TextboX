@@ -92,13 +92,16 @@
 .ContactHolder, .ContactHolder1 {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
+.ProfilePic{
+    width: 60px;
+}
 
 .ContactHolder:hover, .ContactHolder1:hover {
-    background-color: var(--secondary-color);
+    background-color:  #f5967a;
 }
 
 .ContactHolder1 {
@@ -120,7 +123,7 @@
 .MessageScreenBackground {
     flex-grow: 1;
     padding: 20px;
-    background-color: var(--background-color);
+    background-color: #FFC75A;
     overflow-y: auto;
 }
 
@@ -139,10 +142,21 @@
     background-color: var(--secondary-color);
 }
 
+
+
 .MessageBubble2 {
-    align-self: flex-end;
+    max-width: 70%; /* You can adjust this percentage as needed */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     background-color: var(--primary-color);
     color: white;
+    margin-left: auto; /* Pushes the bubble to the right */
+    margin-right: 15px; /* Optional: Adjust the space from the right edge */
+    text-align: right; /* Ensures text inside the bubble is right-aligned */
 }
 
 .MessageInputArea {
@@ -155,7 +169,7 @@
 .MessageInput {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid #FE8660;
     border-radius: 20px;
     margin-right: 10px;
     transition: border-color 0.3s ease-in-out;
@@ -172,7 +186,7 @@
 }
 
 .SendButton:hover {
-    background-color: darken(var(--primary-color), 10%);
+    opacity: 0.8;
 }
 
 @media (max-width: 1200px) {
@@ -254,6 +268,9 @@
 }
 
 @media (max-width: 768px) {
+    .MessageScreenBackground{
+        border-top: 3px solid #FE8660;
+    }
     .FullGrid {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;

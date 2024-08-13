@@ -101,6 +101,9 @@ margin-bottom: 20px;
     border: none;
     border-radius: 6px;
 }
+.Page2Anchor{
+    width: 100px;
+}
 .GoogleSigninBtn{
     display: block;
     margin-left: 15%;
