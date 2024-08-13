@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+.FullGrid {
+    display: grid;
+    grid-template-columns: 0.05fr 0.9fr 4fr;
+    height: 100vh;
+}
+
+.BlackSidebar {
+    background-color: black;
+}
+
+.SideMenu {
+    border-right: 3px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    transition: width 0.3s ease-in-out;
+    border: 1px solid black;
+}
+
+.HamMenuBtn {
+    background: transparent;
+    border: 1px solid black;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.MenuItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.MenuOption {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.MenuOption:hover {
+    background-color: var(--secondary-color);
+}
+
+.MenuIcon {
+    margin-right: 10px;
+    transition: margin-right 0.3s ease-in-out;
+}
+.Logo{
+    width: 60%;
+    margin-top: 240px;
+}
+.PStyling {
+    font-size: 16px;
+    color: var(--text-color);
+    transition: opacity 0.3s ease-in-out;
+}
+.TopHeaderHolder{
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+
+}
+.InputHolder{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+.SearchInput{
+
+    padding: 12px;
+    width: 40%;
+    height: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 5px grey;
+}
+.SearchBtn{
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: url(Images/searchIconOrange.svg);
+    padding-right: 40px;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 5px grey;
+    cursor: pointer;
+    height: 45px;
+}
+
+.ImgHolder{
+    margin-left: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+}
+.IconImg{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.NotificationText{
+    display: inline-block;
+    margin-top: 5px;
+}
+.ProfileHolder{
+    display: flex;
+    height: 60px;
+    margin-left: 180px;
+}
+.IconProfile{
+    height: 68px;
+}
+.ProfileName{
+    display: inline-block;
+    margin-top: 20px;
+}
+.ContactSearchHolder{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.ContactSearch{
+    padding: 12px;
+    width: 40%;
+    margin-bottom: 5px;
+}
+.ContactSearchBtn{
+    background-color: #e08d20;
+    border: none;
+    color: white;
+    margin-bottom: 5px;
+}
+.ContactText{
+    margin-right: 100px;
+}
+.AddBtn{
+    margin-left: 60px;
+    padding: 12px;
+    margin-bottom: 5px;
+    background-color: #e08d20;
+    color: white;
+    border: none;
+}
+.ContactGrid{
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+.Contact{
+    background-color: #FFBD66;
+    border-radius: 6px;
+    height: 300px;
+}
+.ContactProfile{
+    margin-left: 70px;
+}
+.ContactInfo{
+    margin-left: 35px;
+    margin-top: 80px;
+}
