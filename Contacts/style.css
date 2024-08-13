@@ -63,9 +63,7 @@
 }
 .TopHeaderHolder{
     width: 100%;
-    height: 80px;
-    border: 1px solid black;
-
+    margin-bottom: 200px;
 }
 .InputHolder{
     display: flex;
