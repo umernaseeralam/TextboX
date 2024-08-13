@@ -20,6 +20,11 @@ body{
     width: 200px;
     height: 100px;
 }
+.PromptHolder{
+    margin-top: 80px;
+    margin-left: 500px;
+    margin-right: 25px;
+}
 .Prompt{
     font-size: 20px;
     font-weight: 700;
@@ -144,7 +149,9 @@ margin-bottom: 20px;
         width: 150px;
         height: 75px;
     }
-    
+    .PromptHolder{
+        display: none;
+    }
     .Prompt {
         font-size: 18px;
     }
