@@ -86,7 +86,55 @@
                 <div class="ContactSearchHolder" >
                     <h1 class="ContactText" >Contacts</h1>
                      <input placeholder="Search" class="ContactSearch" type="text"><button class="ContactSearchBtn" >Search</button>
-                     <button class="AddBtn" >+ New Contact</button>
+                     <label for="newContactToggle" class="AddBtn">+ New Contact</label>
+                     <input type="checkbox" id="newContactToggle" class="hidden-checkbox">
+<div class="popup-overlay">
+    <div class="popup-content">
+        <label for="newContactToggle" class="close-popup">&times;</label>
+        <h2>New Contact</h2>
+        <form>
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <button type="submit" class="save-btn">Save Contact</button>
+        </form>
+    </div>
+</div>
+                     <!-- <input type="checkbox" id="editProfileToggle" class="hidden-checkbox">
+                        <div class="popup-overlay">
+                            <div class="popup-content">
+                                <label for="editProfileToggle" class="close-popup">&larr;</label>
+                                <h2 class="EditProfileText" >Edit Profile</h2>
+                                <div class="profile-icon">
+                                    <span class="icon"><img src="Images/ProfileIcon.svg" alt="You"></span>
+                                </div>
+                                <p>Share a little about yourself!</p>
+                                <form>
+                                    <div class="input-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" name="fullName" placeholder="Franklin Jr.">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Franklin123@gmail.com">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="mobileNumber">Mobile Number</label>
+                                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+92 12345678">
+                                    </div>
+                                    <button type="submit" class="update-btn">Update</button>
+                                </form>
+                            </div>
+                        </div>-->
                 </div>
                 <div class="ContactGrid">
                     <div class="Contact">

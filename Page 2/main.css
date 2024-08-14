@@ -130,16 +130,21 @@
     padding: 20px;
     background-color: #FACC8F;
     overflow-y: auto;
+    max-width: 800px;
+    max-height: 550px;
+    overflow-y: auto;
 }
 
 .MessageBubble1, .MessageBubble2 {
-    max-width: 70%;
     padding: 10px 15px;
     margin-bottom: 15px;
     border-radius: 20px;
     font-size: 14px;
     line-height: 1.4;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: block; /* Ensures each bubble is on its own line */
+    max-width: 70%; /* Ensures long messages wrap to multiple lines */
+    word-wrap: break-word; /* Breaks long words onto the next line if necessary */
 }
 
 .MessageBubble1 {
@@ -152,8 +157,11 @@
     color: white;
     margin-left: auto;
     margin-right: 15px;
-    text-align: right;
+    text-align: left;
+    max-width: fit-content;
 }
+
+
 
 .MessageInputArea {
     display: flex;
