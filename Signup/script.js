@@ -1,5 +1,5 @@
 // signup.js
-import { auth, database } from '../FireBaseConfig/firebaseConfig';
+import { auth, database } from '/TextboX/FireBaseConfig/firebaseConfig.js';
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 import { ref, set } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
 
