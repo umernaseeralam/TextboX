@@ -1,5 +1,5 @@
 // signin.js
-import { auth } from './FireBaseConfig/firebaseConfig';
+import { auth } from '/TextboX/FireBaseConfig/firebaseConfig.js';
 import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
 
 document.addEventListener('DOMContentLoaded', () => {
