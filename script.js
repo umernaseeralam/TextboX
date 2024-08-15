@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                alert('Sign in successful!');
+                alert('Sign in successful! Please close this alert to open Inbox.');
                 // Redirect to inbox page
                 window.location.href = 'Page 2/index.html';
             })
