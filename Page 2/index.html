@@ -78,18 +78,15 @@
                     </p>
                     </button>
                     <div class="New-chatPopUp" id="popUp">
-                        <label id="back-label"  for="AddNewChat" onclick="closepopUp()" >&larr;</label>
+                        <label class="back-label" display:inline-block; for="AddNewChat" onclick="closepopUp()" >&larr;</label>
                      <h1>Add Chat</h1>
                      <div class="input-group">
                      <input type="text" id="User-name" name="User-name" placeholder="Enter Name"></div>
                      <button type="submit" class="Add">Add</button>
                     </div>
                     <button class="MenuOption" >
-                        <img class="MenuIcon" src="Images/SettingIcon.svg" alt="Settings">
-                        <a class="Link-text" href="../Settings/Settings.html"><p  class="PStyling" >
-                        Settings
-                    </p>
-                    </a>
+                        <img class="MenuIcon" src="Images/SettingIcon.svg" alt="Inbox">
+                        <a class="Link-text" href="../Settings/Settings.html">Settings</a>
                 </div>
             </div>
             
@@ -127,10 +124,15 @@
                 </div>
                 <div class="MessageInputArea">
                     <input type="text" class="MessageInput" placeholder="Type a message...">
-                    <button class="SendButton">Send</button>
+                    <button onclick="SendMessage()" class="SendButton">Send</button>
                 </div>
             </div>
         </div>
+        <script src="PopUp.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
+    <script type="module" src="../FireBaseConfig/firebaseConfig.js"></script>
+    <script type="module" src="Script.js"></script>
     </body>
-    <script src="PopUp.js"></script>
 </html>
