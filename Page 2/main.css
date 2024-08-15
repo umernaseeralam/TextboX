@@ -185,7 +185,9 @@
     margin-right: 10px;
     transition: border-color 0.3s ease-in-out;
 }
-
+.Link-text{
+    text-decoration: none;
+}
 .SendButton {
     
 
@@ -443,6 +445,8 @@
    margin: 5px;
    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
    visibility: hidden;
+   
+   transition: opacity 0.3s ease, visibility 0.3s ease;
  
 }
 .openpopUp{
@@ -468,6 +472,7 @@
     font-size: 16px;
     cursor: pointer;
     margin-left: 12px;
+    
   
 
 }
@@ -482,6 +487,9 @@
     border: none;
 
 
+}
+#back-label{
+    float: left;
 }
 .profile-icon {
     text-align: center;
