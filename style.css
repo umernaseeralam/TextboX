@@ -35,8 +35,7 @@ body{
     border: 1px solid #C4C4C4;
     box-shadow: 10px 10px 5px #aaaaaa;
     width: 40%;
-    margin-top: 50px;
-    height: 600px;
+    height: 590px;
     border-bottom-right-radius:40% ;
     background-color: white;
 }
@@ -89,6 +88,8 @@ margin-bottom: 20px;
     display: flex;
     justify-content: left;
     margin-left: 50px;
+    text-decoration: none;
+    color:#FE8660 ;
 }
 .RememberBtn{
     border: 1px solid;
@@ -96,27 +97,43 @@ margin-bottom: 20px;
     width: 18px;
     background-color: transparent;
 }
+.Contactstxt{
+    text-decoration: none;
+}
 .SigninBtn{
     display: block;
-    margin-left: 15%;
+    margin-left: 20%;
     padding: 12px ;
     width: 65%;
-    background-color: #FE8660;
+    background: linear-gradient(to right, #FFBD66, #FF7A7A);
     color: white;
     border: none;
     border-radius: 6px;
 }
+.SigninBtn:hover{
+    opacity: 0.8;
+}
 .Page2Anchor{
     width: 100px;
+    text-decoration: none;
+    color: white;
 }
 .GoogleSigninBtn{
     display: block;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 2%;
     padding: 12px ;
     width: 65%;
     border: 1px solid #DADADA;
     border-radius: 6px;
+}
+.GoogleSigninBtn:hover{
+    background-color:bisque;
+    
+}
+.signupbtn{
+    text-decoration: none;
+    color:#FE8660;
 }
 .SignupText{
     display: flex;
