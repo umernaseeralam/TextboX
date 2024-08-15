@@ -12,13 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = document.querySelector('input[placeholder="Enter your name"]').value;
         const email = document.querySelector('input[placeholder="Enter your Email"]').value;
         const password = document.querySelector('input[placeholder="Enter your Password"]').value;
-        const confirmPassword = document.querySelector('input[placeholder="Re-Enter your Password"]').value;
-        
-        if (password !== confirmPassword) {
-            alert('Passwords do not match');
-            return;
-        }
-        
+       
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
